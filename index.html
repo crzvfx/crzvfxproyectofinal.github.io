@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Proyecto de Computación</title>
+    <style>
+        /* --- ESTILOS GENERALES Y FONDO ESTÁTICO --- */
+        body {
+            /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+            background-image: url('imagenes html/fondo.jpg'); 
+            background-attachment: fixed; /* Esto hace que el fondo se quede estático al hacer scroll */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #ffffff; /* Color de texto base para que contraste si el fondo es oscuro */
+        }
+
+        /* --- ENCABEZADOS --- */
+        h1 {
+            text-align: center; /* Alineación al centro */
+            color: #FFD700; /* Color dorado */
+            font-family: 'Impact', sans-serif; /* Fuente llamativa */
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px #000000; /* Sombra para que se lea mejor */
+            margin-top: 20px;
+        }
+
+        h2 {
+            text-align: left; /* Alineación a la izquierda */
+            color: #00FFFF; /* Color cian */
+            font-family: 'Courier New', Courier, monospace;
+            border-bottom: 2px solid #00FFFF;
+            padding-bottom: 5px;
+        }
+
+        /* --- NAVEGACIÓN / HIPERVÍNCULOS --- */
+        nav {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con transparencia */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700; /* Cambia de color al pasar el mouse */
+        }
+
+        /* --- SECCIÓN DE INTEGRANTES --- */
+        .contenedor-integrantes {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tarjeta-integrante {
+            background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+            backdrop-filter: blur(5px); /* Efecto difuminado de fondo */
+            border-radius: 10px;
+            padding: 20px;
+            width: 40%;
+            min-width: 280px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        /* Tamaños de imágenes controlados por CSS */
+        .foto-ia {
+            width: 200px; /* Tamaño fijo de ancho */
+            height: 200px; /* Tamaño fijo de alto */
+            object-fit: cover; /* Evita que la foto se distorsione */
+            border-radius: 50%; /* Hace la imagen circular */
+            border: 3px solid #fff;
+            margin-bottom: 15px;
+        }
+
+        /* --- FORMATO DE TEXTO DIFERENTE POR INTEGRANTE --- */
+        
+        /* Integrante 1: Estilo Anime / Gamer */
+        .integrante-1 h3 {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 1.8rem;
+            color: #8EB9FC; /* Rosa brillante */
+        }
+        .integrante-1 p {
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            font-size: 1.1rem;
+            color: #274DEA;
+            line-height: 1.5;
+        }
+
+        /* Integrante 2: Estilo Pixar / Tech */
+        .integrante-2 h3 {
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+            color: #FCB1D0; /* Verde lima */
+        }
+        .integrante-2 p {
+            font-family: 'Georgia', serif;
+            font-size: 1rem;
+            color: #FC6BE1;
+            line-height: 1.6;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <audio src="musica-fondo.mp3" autoplay loop controls style="display: none;"></audio>
+    <h1>Bienvenidos a Nuestro Proyecto</h1>
+
+    <nav>
+       
+        <a href="https://crzvfx.github.io/">Proyecto Parte 1</a>
+        <a href="crzvfx/video_ruta4x4.github.io">Proyecto Parte 2</a>
+        <a href="https://crzvfx.github.io/crzvfxcroquis.github.io/">Proyecto Parte 3</a>
+        
+        
+    </nav>
+
+    <h2>Presentación de los Integrantes</h2>
+
+    <div class="contenedor-integrantes">
+
+        <div class="tarjeta-integrante integrante-1">
+            <img src="imagenes html/IA_CRIS (2).png" alt="Foto Integrante 1" class="foto-ia">
+            <h3>Cristian</h3>
+            <p>
+                Hola, yo soy Cristian Solis del grupo 2IM19, mi materia favorita es computacion, Me gusta mucho el gimnacio y soy muy social con la gente, Mi sueño es ser el mejor ingeniero del sector automotriz
+            </p>
+        </div>
+
+        <div class="tarjeta-integrante integrante-2">
+            <img src="imagenes html/IA_SAM.jpeg " alt="Foto Integrante 2" class="foto-ia">
+            <h3>Samantha</h3>
+            <p>
+                Hola, yo soy Samantha Silva tambien del grupo 2IM19, Me gustan muchos los deportes, pero lo que mas me apasiona de los deportes, es natacion, mi sueño es ser arquitecta y viajar por el mundo 
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
